@@ -1,0 +1,145 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+}
+
+header {
+	height: 64px;
+	color: white;
+	background-color: #b00;
+	box-shadow: 0 0 5px #b00;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+header a {
+	color: white;
+	padding: 0px 1em;
+	display: inline-block;
+	text-decoration: none;
+}
+
+header a:target {
+	color: red;
+}
+
+header, section, footer {
+	padding: 0px 1em;
+}
+
+section {
+	padding: 1em;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.grow {
+	flex-grow: 1;
+}
+.center {
+	align-items: center;
+	justify-content: center;
+
+}
+.overlay {
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+.overlay>* {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	border-bottom: 2px solid #500;
+	color: #500;
+	font-size: 3em;
+	margin: .1em 0;
+}
+#text-spanning {
+	width: 500px;
+	display: inline-block;
+
+}
+
+#beranda {
+	padding: 100px 100px 0 100px;
+
+}
+
+
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#intro {
+	text-align: center;
+	padding: 50px;
+	background: #a00;
+	color: white;
+	font-size: 2em;
+}
+#intro p {
+	margin: 0;
+}
+
+#intro hr {
+	border: 2px solid white;
+	border-radius: 4px;
+}
+
+#info {
+    padding: 2em;
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.5em;
+	text-indent: 5em;
+}
+
+.gal-carousel  img {
+	width: calc(100% - 30px);
+	height: 300px;
+	object-fit: cover;
+	margin: auto;
+	transition: all 0.5s;
+}
+
+.gal-carousel img:hover {
+	transform: scale(1.2);
+	transition: all 0.5s;
+	box-shadow: 0 0 5px #b00;
+}
+
+.gal-carousel .gal-item {
+	padding: 50px 0;
+}
+
+footer {
+	padding: 50px;
+	padding-top: 20px;
+	color: white;
+	text-align: center;
+	background: #a00;
+}
+
+@media(max-height: 300px) {
+	header a {
+		display: none;
+	}
+}

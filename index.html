@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HARI ANTI NARKOTIKA SEDUNIA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<link rel="stylesheet" href="vendor/slick.css">
+	<link rel="stylesheet" href="vendor/slick-theme.css">
+	<script src="vendor/jquery.min.js"></script>
+	<link rel="icon" href="img/logo-palm.png">
+	<script src="vendor/slick.min.js"></script>
+</head>
+<body>
+	<header class="row">
+		<img src="img/logo-palm.png" height="40px" style="margin-right: 20px">
+		<div class="left grow" style="vertical-align: middle">
+			ANTI NARKOTIKA SEDUNIA
+		</div>
+		<a href="#beranda">Beranda</a>
+		<a href="#intro">Apa itu HANI?</a>
+		<a href="#info">Sejarah</a>
+		<a href="#galeri">Galeri</a>
+		<a href="#footer">Tentang</a>
+		<script>
+			$('header a').on('click', function(e) {
+				e.preventDefault();
+				var offset = $(this.href.substr(this.href.indexOf('#'))).offset().top;
+				window.scrollTo({
+					top: offset - 100,
+					behavior: "smooth",
+				});
+			});
+		</script>
+	</header>
+	<section id="beranda" class="row">
+		<div class="left grow">
+			<h1 class="row">
+				<span>
+					STOP&nbsp;
+				</span>
+				<div id="text-spanning">
+					<span>NARKOTIKA</span>
+					<span>MIRAS</span>
+					<span>OBAT TERLARANG</span>
+				</div>
+				<script>
+				$('#text-spanning').slick({
+					arrows: false,
+					infinite: true,
+           			autoplay: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				});
+				</script>
+			</h1>
+			<div style="font-size: 1.2em">
+				<b>HARI ANTI NARKOTIKA SEDUNIA</b> | 26 JUNI 2019
+			</div>
+		</div>
+		<div class="right">
+			<div class="overlay">
+				<div id="img-spanning" style="width: 200px; height: 200px">
+					<img src="img/logo-ganja.png" height="150px">
+					<img src="img/logo-miras.png" height="150px">
+					<img src="img/logo-drug.png" height="150px">>
+				</div>
+				<img src="img/logo-no.png" width="300px">
+				<script>
+					$('#img-spanning').slick({
+						arrows: false,
+						fade: true,
+						infinite: true,
+						autoplay: true,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					});
+				</script>
+			</div>
+		</div>
+	</section>
+	<img src="img/grad-home-intro.png" width="100%" style="transform: translateY(10px);">
+	<section id="intro">
+		<p>Tanggal 26 Juni adalah peringatan<br> <b>Hari Anti Narkotika Internasional (HANI)</b>.</p>
+		<hr>
+		<p style="font-size:1.5rem">
+			Peringatan Hari Anti Narkotika Internasional diperingati setiap tahunnya untuk memperkuat aksi dan
+			kerja sama secara global. Selain itu, melalui peringatan ini, masyarakat akan diingatkan
+			untuk menghindari penyalahgunaan narkoba, melawan penyalahgunaan obat-obatan,
+			dan penjualan obat secara ilegal.
+		</p>
+	</section>
+	<img src="img/grad-home-intro.png" width="100%" style="transform: translateY(-10px) scale(-1);">
+	<section id="info">
+		<h2>Bagaimana sejarahnya hingga 26 Juni ditetapkan sebagai Hari Anti Narkotika Internasional?</h2>
+		<p>Penetapan 26 Juni sebagai Hari Anti Narkotika Internasional dicanangkan oleh United Nations Office on Drugs and Crime (UNODC) pada 26 Juni 1988.
+			Tanggal ini dipilih dengan mengambil momen pengungkapan kasus perdagangan opium oleh Lin Zexu (1785-1851) di Humen, Guangdong, Tiongkok.
+			Lin Zexu adalah pejabat yang hidup pada masa Kaisar Daoguang dari Dinasti Qing. Ia terkenal dengan perjuangannya menentang perdagangan
+			opium di Tiongkok oleh bangsa-bangsa asing. Kala itu, Lin Zexu melihat negaranya semakin terpuruk karena harta negara terus mengalir ke
+			Inggris untuk membeli obat terlarang, dan ada ketergantungan akan opium. Oleh karena itu, Lin bertekad menumpas obat terlarang.
+			Usahanya ini akhirnya memicu Perang Candu antara Tiongkok dan Inggris. Kemudian,
+			Kaisar Daoguang memanggil Lin Zexu untuk membahas penerapan larangan terhadap pedagangan opium. Di hadapan Kaisar, ia menegaskan
+			bahwa opium harus dilarang karena konsumsinya menghabiskan kekayaan negara. Kondisi di Indonesia Di Indonesia, pemberantasan narkoba
+			jadi perhatian serius pemerintah. Presiden Joko Widodo, pada Februari 2015, menyatakan, Indonesia gawat darurat narkoba.
+			"Ada sebuah situasi yang sudah sangat darurat. Semuanya harus kerja sama karena kondisinya menurut saya sudah sangat darurat,"
+			kata Presiden Jokowi, di Jakarta.</p>
+	</section>
+	<section id="galeri">
+		<h2>Galeri</h2>
+		<div class="gal-carousel">
+			<div class="gal-item">
+				<img src="img/galeri-1.jpg">
+			</div>
+			<div class="gal-item">
+				<img src="img/galeri-2.jpg">
+			</div>
+			<div class="gal-item">
+				<img src="img/galeri-3.jpg">
+			</div>
+		</div>
+		<script>
+			$('.gal-carousel').slick({
+				autoplay: true,
+				centerMode: true,
+				slidesToShow: 2,
+				arrows: false,
+			})
+		</script>
+	</section>
+	<img src="img/grad-home-intro.png" width="100%" style="transform: translateY(10px);">
+	<footer id="footer">
+		<p>
+			<img src="img/logo-palm.png" style="filter: brightness(100)" width="120px">
+		</p>
+		HARI ANTI NARKOTIKA DUNIA | 26 JUNI 2019<br>
+		Author: Wildan Mubarok | David Apriyanto<br>
+		Web digunakan untuk lomba TechnoFest di UNTAG
+	</footer>
+</body>
+</html>
